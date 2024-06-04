@@ -1,0 +1,34 @@
+<html>
+<head>
+
+	<title> Color App By Raj </title>
+	<style>
+		*{font-size:50px;}
+	</style>
+</head>
+<body>
+<center>
+
+	<h1> Color App </h1>
+	<form onsubmit="color()">
+	<input type="submit" value="Red"/>
+	<input type="submit" value="Green"/>
+	<input type="submit" value="Blue"/>
+	</form>
+
+	<script>
+		function color()
+		{
+		event.preventDefault();
+		let ele = document.activeElement.value;
+		if(ele == "Red")
+			document.body.style.backgroundColor="red";
+		else if (ele == "Green")
+			document.body.style.backgroundColor="green";
+		else if (ele == "Blue")
+			document.body.style.backgroundColor="blue";
+		}
+	</script>
+</center>
+</body>
+</html>
